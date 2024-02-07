@@ -1,0 +1,22 @@
+{
+    "type": "veggycraft:carbon_cutting",
+    "inputA": {
+        "item": "minecraft:redstone"
+    },
+    "inputB": {
+        "tag": "minecraft:logs"
+    },
+    "inputC": {
+        "tag": "minecraft:logs"
+    },
+    "inputD": {
+        "tag": "minecraft:logs"
+    },
+    "toolInput": {
+        "item": "minecraft:wooden_pickaxe"
+    },
+    "result": {
+        "item": "minecraft:cobblestone",
+        "count": 20
+    }
+}
