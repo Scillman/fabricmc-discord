@@ -42,7 +42,7 @@ public final class CarbonCuttingRecipe implements CraftingRecipe
         for (int slot = 0; slot < inventory.size(); ++slot)
         {
             ItemStack itemStack = inventory.getStack(slot);
-            if (!itemStack.isEmpty())
+            if (itemStack != null && !itemStack.isEmpty())
             {
                 if (toolInput.test(itemStack))
                 {
@@ -61,7 +61,7 @@ public final class CarbonCuttingRecipe implements CraftingRecipe
             }
 
             ItemStack itemStack = inventory.getStack(slot);
-            if (!itemStack.isEmpty())
+            if (itemStack != null && !itemStack.isEmpty())
             {
                 if (carbonInputA.test(itemStack)) return true;
                 if (carbonInputB.test(itemStack)) return true;
@@ -88,7 +88,7 @@ public final class CarbonCuttingRecipe implements CraftingRecipe
     @Override
     public ItemStack getResult(DynamicRegistryManager registryManager)
     {
-        return null;
+        return this.result;
     }
 
     @Override
