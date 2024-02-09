@@ -2,7 +2,9 @@
     "required": true,
     "package": "net.klayil.veggycraft.mixin",
     "compatibilityLevel": "JAVA_17",
-    "mixins": [],
+    "mixins": [
+        "CraftingTableBlockMixin"
+    ],
     "injectors": {
         "defaultRequire": 1
     }
