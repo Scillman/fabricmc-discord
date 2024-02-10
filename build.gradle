@@ -22,9 +22,9 @@ fabricApi {
 	configureDataGeneration()
 }
 
-loom {
-	accessWidenerPath = file("src/main/resources/example.accesswidener")
-}
+// loom {
+// 	accessWidenerPath = file("src/main/resources/example.accesswidener")
+// }
 
 dependencies {
 	// To change the versions see the gradle.properties file

@@ -15,29 +15,23 @@ import net.minecraft.resource.featuretoggle.ToggleableFeature;
 @Mixin(value=Item.class)
 public abstract class ItemMixin implements ToggleableFeature, ItemConvertible, FabricItem
 {
-    @Inject(method="isEnchantable", at=@At("RETURN"))
-    public boolean isEnchantable(ItemStack stack, CallbackInfoReturnable<Boolean> cir)
+    @Inject(method="isEnchantable", at=@At("RETURN"), cancellable=true)
+    private void example$onIsEnchantable(ItemStack stack, CallbackInfoReturnable<Boolean> cir)
     {
-        Item me = (Item)(Object)this;
-
-        if (me instanceof HorseArmorItem)
+        Item item = stack.getItem();
+        if (item instanceof HorseArmorItem)
         {
-            return true;
+            cir.setReturnValue(true);
         }
-
-        return false;
     }
 
-    @Inject(method="getEnchantability", at=@At("RETURN"))
-    public int getEnchantability(CallbackInfoReturnable<Integer> cir)
+    @Inject(method="getEnchantability", at=@At("RETURN"), cancellable=true)
+    private void example$onGetEnchantability(CallbackInfoReturnable<Integer> cir)
     {
         Item me = (Item)(Object)this;
-
         if (me instanceof HorseArmorItem)
         {
-            return 1;
+            cir.setReturnValue(1);
         }
-
-        return 0;
     }
 }

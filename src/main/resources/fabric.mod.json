@@ -3,23 +3,21 @@
 	"id": "wetnoodle",
 	"version": "${version}",
 	"name": "WetNoodle",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "An example for making Horse Armor enchantable in Minecraft using Fabric.",
 	"authors": [
-		"Me!"
+		"Scillman"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Scillman/mc-wetnoodle-template-1.20.4/",
+		"sources": "https://github.com/Scillman/mc-wetnoodle-template-1.20.4/",
+		"issues": "https://github.com/Scillman/mc-wetnoodle-template-1.20.4/"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/wetnoodle/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.discord.wetnoodle.WetNoodle"
-		],
-		"fabric-datagen": [
-			"com.discord.wetnoodle.WetNoodleDataGenerator"
 		]
 	},
 	"mixins": [
@@ -30,9 +28,5 @@
 		"minecraft": "~1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	},
-	"accessWidener": "example.accesswidener"
+	}
 }
