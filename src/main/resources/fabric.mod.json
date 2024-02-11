@@ -2,16 +2,17 @@
     "schemaVersion": 1,
     "id": "veggycraft",
     "version": "${version}",
-    "name": "Veggycraft",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "name": "VeggyCraft",
+    "description": "This is an example mod!",
     "authors": [
-        "Me!"
+        "Scillman"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://github.com/Scillman/fabricmc-discord/",
+        "sources": "https://github.com/Scillman/fabricmc-discord/",
+        "issues": "https://github.com/Scillman/fabricmc-discord/"
     },
-    "license": "CC0-1.0",
+    "license": "MIT",
     "icon": "assets/veggycraft/icon.png",
     "environment": "*",
     "entrypoints": {

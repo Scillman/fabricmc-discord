@@ -26,17 +26,5 @@ public class Veggycraft implements ModInitializer
     {
         Registry.register(Registries.RECIPE_TYPE, new Identifier(MOD_ID, CC_RECIPE_ID), CC_RECIPE_TYPE);
         Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(MOD_ID, CC_RECIPE_ID), CC_RECIPE_SERIALIZER);
-
-        //net.minecraft.block.CraftingTableBlock ctb;
-        //net.minecraft.block.FurnaceBlock fb;
-        // net.minecraft.client.gui.screen.ingame.CraftingScreen cs;
-        // net.minecraft.inventory.CraftingResultInventory cri;
-        // net.minecraft.block.entity.BrewingStandBlockEntity bsbe;
-        // net.minecraft.screen.AbstractRecipeScreenHandler arch;
-
-        // net.minecraft.screen.CraftingScreenHandler csh;
-        // net.minecraft.block.CraftingTableBlock ctb;
-        // net.minecraft.server.network.ServerPlayerEntity spe;
-        // net.minecraft.client.network.ClientPlayerEntity cpe;
     }
 }

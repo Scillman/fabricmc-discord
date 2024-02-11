@@ -1,8 +1,9 @@
 # README
-Trick-or-Treat it is actually MC 1.20.2 not 1.20.4
+Shows how to add a custom recipe.
 
 # Original Source(s)
-* [FabricMC Docs](https://github.com/natanfudge/fabric-docs/tree/master/src/main/java/net/fabricmc/example/recipe)
+* [Yarn Mappings](https://maven.fabricmc.net/docs/yarn-1.20.4+build.3/)
+* [Fabric API](https://maven.fabricmc.net/docs/fabric-api-0.91.6+1.20.2/)
 * [NatanFudge](https://github.com/natanfudge/fabric-docs/blob/master/newdocs/Modding-Tutorials/Crafting-Recipes/defining-custom-crafting-recipes.md)
 
 # For

@@ -19,11 +19,10 @@ import net.minecraft.world.World;
 public class CraftingTableBlockMixin
 {
     @Inject(method="createScreenHandlerFactory", at=@At("HEAD"), cancellable=true)
-    public NamedScreenHandlerFactory onCreateScreenHandlerFactory(BlockState state, World world, BlockPos blockPos, CallbackInfoReturnable<NamedScreenHandlerFactory> cir)
+    public void example$onCreateScreenHandlerFactory(BlockState state, World world, BlockPos blockPos, CallbackInfoReturnable<NamedScreenHandlerFactory> cir)
     {
         cir.setReturnValue(new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> {
             return new VeggycraftScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, blockPos));
         }, Text.translatable("container.crafting")));
-        return cir.getReturnValue();
     }
 }
