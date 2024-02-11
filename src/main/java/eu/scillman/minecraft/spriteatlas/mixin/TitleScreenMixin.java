@@ -17,7 +17,8 @@ import net.minecraft.util.Identifier;
 @Mixin(TitleScreen.class)
 public abstract class TitleScreenMixin extends Screen
 {
-    protected TitleScreenMixin(Text title) {
+    protected TitleScreenMixin(Text title)
+    {
         super(title);
         //TODO Auto-generated constructor stub
     }
@@ -35,7 +36,8 @@ public abstract class TitleScreenMixin extends Screen
     );
 
     @Inject(method = "init", at = @At("TAIL"))
-    private void Init(CallbackInfo ci) {
+    private void example$onInit(CallbackInfo ci)
+    {
         int l = this.height / 4 + 78;
         this.addDrawableChild(new TexturedButtonWidget(this.width / 2 - 117, l+12, 11, 7, DOWN_BUTTON_TEXTURES, (button) -> --Spriteatlas.counter, Text.literal("account down")));
         this.addDrawableChild(new TexturedButtonWidget(this.width / 2 - 117, l-12, 11, 7, UP_BUTTON_TEXTURES, (button) -> ++Spriteatlas.counter, Text.literal("account up")));

@@ -2,16 +2,17 @@
     "schemaVersion": 1,
     "id": "spriteatlas",
     "version": "${version}",
-    "name": "spriteatlas",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "name": "SpriteAtlas",
+    "description": "This is an example on how to add sprites to an atlas.",
     "authors": [
-        "Me!"
+        "Scillman"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://github.com/Scillman/fabricmc-discord/",
+        "sources": "https://github.com/Scillman/fabricmc-discord/",
+        "issues": "https://github.com/Scillman/fabricmc-discord/"
     },
-    "license": "CC0-1.0",
+    "license": "MIT",
     "icon": "assets/spriteatlas/icon.png",
     "environment": "*",
     "entrypoints": {
@@ -27,8 +28,5 @@
         "minecraft": "~1.20.4",
         "java": ">=17",
         "fabric-api": "*"
-    },
-    "suggests": {
-        "another-mod": "*"
     }
 }
