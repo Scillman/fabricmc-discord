@@ -12,12 +12,12 @@ import net.minecraft.item.Item;
 @Mixin(targets="net.minecraft.enchantment.EnchantmentTarget$1")
 public abstract class EnchantmentTargetMixin
 {
-	@Inject(at=@At("RETURN"), method="isAcceptableItem", cancellable=true)
-	private void exmaple$onIsAcceptableItem(Item item, CallbackInfoReturnable<Boolean> cir)
-	{
-		if (item instanceof HorseArmorItem)
-		{
-			cir.setReturnValue(true);
-		}
-	}
+    @Inject(at=@At("RETURN"), method="isAcceptableItem", cancellable=true)
+    private void exmaple$onIsAcceptableItem(Item item, CallbackInfoReturnable<Boolean> cir)
+    {
+        if (item instanceof HorseArmorItem)
+        {
+            cir.setReturnValue(true);
+        }
+    }
 }

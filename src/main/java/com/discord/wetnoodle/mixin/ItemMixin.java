@@ -28,8 +28,7 @@ public abstract class ItemMixin implements ToggleableFeature, ItemConvertible, F
     @Inject(method="getEnchantability", at=@At("RETURN"), cancellable=true)
     private void example$onGetEnchantability(CallbackInfoReturnable<Integer> cir)
     {
-        Item me = (Item)(Object)this;
-        if (me instanceof HorseArmorItem)
+        if ((Object)this instanceof HorseArmorItem)
         {
             cir.setReturnValue(1);
         }
