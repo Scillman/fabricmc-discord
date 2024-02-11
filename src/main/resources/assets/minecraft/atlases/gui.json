@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "sources": [
+        {"type": "single", "resource": "spriteatlas:gui/sprites/widget/enabled"},
+        {"type": "single", "resource": "spriteatlas:gui/sprites/widget/enabled_highlight"},
+        {"type": "single", "resource": "spriteatlas:gui/sprites/widget/disabled"},
+        {"type": "single", "resource": "spriteatlas:gui/sprites/widget/disabled_highlight"}
+    ]
+}
