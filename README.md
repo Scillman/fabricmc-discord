@@ -1,5 +1,5 @@
 # README
-Shows how to add a custom recipe.
+Shows how to use the ``gui`` texture atlas to load custom sprite textures.
 
 # Original Source(s)
 * [Yarn Mappings](https://maven.fabricmc.net/docs/yarn-1.20.4+build.3/)
