@@ -27,7 +27,7 @@ public abstract class TitleScreenMixin extends Screen
         new Identifier(Spriteatlas.MOD_ID, "widget/enabled_highlight"),
         new Identifier(Spriteatlas.MOD_ID, "widget/enabled")
     );
-    
+
     @Unique
     private static final ButtonTextures DOWN_BUTTON_TEXTURES = new ButtonTextures(
         new Identifier(Spriteatlas.MOD_ID, "widget/disabled_highlight"),
@@ -37,7 +37,7 @@ public abstract class TitleScreenMixin extends Screen
     @Inject(method = "init", at = @At("TAIL"))
     private void Init(CallbackInfo ci) {
         int l = this.height / 4 + 78;
-        this.addDrawableChild(new TexturedButtonWidget(this.width / 2 - 117, l + 12, 11, 7, DOWN_BUTTON_TEXTURES, (button) -> --Spriteatlas.counter, Text.literal("account down")));
+        this.addDrawableChild(new TexturedButtonWidget(this.width / 2 - 117, l+12, 11, 7, DOWN_BUTTON_TEXTURES, (button) -> --Spriteatlas.counter, Text.literal("account down")));
         this.addDrawableChild(new TexturedButtonWidget(this.width / 2 - 117, l-12, 11, 7, UP_BUTTON_TEXTURES, (button) -> ++Spriteatlas.counter, Text.literal("account up")));
     }
 }
